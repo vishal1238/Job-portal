@@ -1,0 +1,441 @@
+*{
+	margin:0;
+	padding:0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#header1
+{
+	background-color:#ab183d;
+    margin-bottom:5px;
+	height:175px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#headerimg {
+    padding: 10px 0;
+    float: left;
+    margin-left: 20px;
+}
+#headerS
+{
+	padding-top: 40px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #fff;
+    margin-right: 200px;
+}
+#headerS p
+{
+	font-size:18px;
+}
+
+#login {
+    position: absolute;
+    top: 66px; 
+    right: 60px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    color: #800000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.login-btn:hover::after {
+    content: "→";
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+}
+
+.login-btn:hover {
+    padding-right: 30px;
+}
+
+.login-btn:hover::after {
+    right: 5px;
+    opacity: 1;
+}
+
+#header2
+{
+	height:50px;
+	max-width: 1010px;
+	background-color:black;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#header2UL li:last-child
+{
+	border:none;
+}
+#header2UL li
+{
+	margin-top:20px;
+	height:30px;
+    width:165px;
+    float:left;
+    text-align:center;
+    list-style:none;
+    border-right:1px solid white;
+    font:normal bold 14px/1.2em Arial,Verdana,Helvetica;
+    padding:0;
+    background-color:balck;
+}	
+#header2UL a
+{
+	margin-left:25px;
+	color:white;
+	text-align:center;
+	float:left;
+	display: block;
+	text-decoration:none;
+	font-weight:bold;
+}
+#marquee0
+{
+	font-size:18px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#marquee1
+{
+	width:1010px; 
+	font-family: Arial,Helvetica,sans-serif;
+}
+#marquee2
+{
+	max-width:1011px;
+	width:1015px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#header3_1
+{
+	margin-top:20px;
+	height:90px;
+	width:728px;
+	background-color:#DDD;
+}
+#header3_1:hover
+{
+	background-color: #EEE;
+}
+#header3A 
+{
+	margin-top:3px;
+	height:20px;
+	width:200px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#header3B
+{
+	margin-top:-1px;
+	height:38px;
+	width:355px;
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;
+	background-color: #0000a0;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#header3B a{color:white;}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+.dreamjob {
+	--fill-color: #ab183d;
+	position: relative;
+	display: block;
+	padding: 4px 0;
+	font: 700 3rem Raleway, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-text-stroke: 2px var(--fill-color);
+	background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+	color: transparent;
+	background-clip: text;
+	transition: 1.2s linear;
+
+	&:hover {
+	  background-size: 100%;
+	}
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.job-card {  
+    background: white;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);  
+    text-align: left;  
+    transition: transform 0.2s, box-shadow 0.2s;
+}  
+
+.job-card:hover {  
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}  
+
+.job-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-logo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.company-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.job-type {
+    margin: 2px 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.job-title {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.job-description {
+    font-size: 14px;
+    color: gray;
+}
+
+.job-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.salary {
+    color: #333;
+}
+
+.apply-btn {  
+	text-decoration: none;
+    background-color: transparent;
+    color: #ab183d;
+    padding: 10px 20px;  
+    border: 2px solid #ab183d; 
+    border-radius: 5px;
+    transition: all 0.7s;
+}  
+
+.apply-btn:hover {  
+    background-color: #ab183d;
+    color: white;
+}  
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+}
+#heading 
+{
+    background:#ab183d;
+    text-align: center;
+    color:#fff;
+    padding:6px;
+	font-size:24px;
+	font-family:Arial,Helvetica,sans-serif;
+}
+#jobheader {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1px;  
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1px;
+}
+
+.column {
+    border: 2px solid #d2691e;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heights for sections */
+.large {
+    height: 1150px;
+    flex: 1;
+}
+
+.medium {
+    height: 840px;
+    flex: 1;
+    margin: 20px;
+}
+
+.small {
+    height: 730px;
+    flex: 1;
+    margin: 20px;
+}
+
+.header-title {
+    background-color: #ab183d;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#footer{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #ececec;
+}
+
+#footer p, #footer{
+    text-decoration: none;
+    color: rgb(109,109, 109);
+}
+
+#footer a:hover{
+    color:#ab183d;
+}
+
+#footer .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+#footer .logoimg img {
+    width: 200px;
+    height: auto;
+    margin-top: -100px;
+}
+
+#footer .left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .right-section {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-left: 210px;
+    margin-top: 100px;
+}
+
+#footer .about a{
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+
+}
+#footer .instal {
+    margin-left: 300px;
+
+}
+
+#footer .download img{
+    border: 1px solid #ab183d;
+    border-radius: 7px;
+}
+
+.socials {
+    margin-top: 15px;
+}
+
+.socials a {
+    color: black;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ab183d;
+}
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #ab183d;
+}
+
+.resume-btn {  
+    text-decoration: none;
+    background-color: white;
+    color: #ab183d;
+    padding: 10px 20px;  
+    border: 2px solid #ab183d; 
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: #ab183d;
+}
+
+
